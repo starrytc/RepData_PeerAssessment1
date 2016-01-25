@@ -1,10 +1,4 @@
----
-title: 'Reproducible Research: Peer Assessment 1'
-output:
-  html_document:
-    keep_md: yes
-  pdf_document: default
----
+# Reproducible Research: Peer Assessment 1
 
 This assignment makes use of data from a personal activity monitoring device. This device collects data at 5 minute intervals through out the day. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day.
 
@@ -100,7 +94,10 @@ p <- ggplot(new_steps_per_day, aes(x = steps)) +
 new_steps_mean <- mean(new_steps_per_day$steps)
 new_steps_median <- median(new_steps_per_day$steps)
 print(p)
-qplot(sth the missing values filled in, the mean and meadian total number of steps taken per day are 10765.639 and 10762, individually. These are slightly different than the mean and median from the original data set, where the mean and median values are 10766.189 and 10765, separately. Imputing missing data increases the estimates of the total daily number of steps.
+qplot(steps_per_day)
+```
+
+With the missing values filled in, the mean and meadian total number of steps taken per day are 10765.639 and 10762, individually. These are slightly different than the mean and median from the original data set, where the mean and median values are 10766.189 and 10765, separately. Imputing missing data increases the estimates of the total daily number of steps.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 The dataset with the filled-in missing values is used for this part.
